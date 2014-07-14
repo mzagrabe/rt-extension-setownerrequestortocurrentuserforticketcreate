@@ -1,0 +1,22 @@
+<%INIT>
+if (
+    defined $ARGSRef->{'RT-Extension-SetOwnerRequestorToCurrentUserForTicketCreate__set_owner_to_current_user'}
+    &&
+    $ARGSRef->{'RT-Extension-SetOwnerRequestorToCurrentUserForTicketCreate__set_owner_to_current_user'} eq 'yes'
+) {
+    $RT::Logger->debug("Checked value for setting owner to current user. Setting owner to ".$session{CurrentUser}->Name.'.');
+    $ARGSRef->{Owner} = $session{CurrentUser}->Id;
+}
+
+if (
+    defined $ARGSRef->{'RT-Extension-SetOwnerRequestorToCurrentUserForTicketCreate__set_requestor_to_current_user'}
+    &&
+    $ARGSRef->{'RT-Extension-SetOwnerRequestorToCurrentUserForTicketCreate__set_requestor_to_current_user'} eq 'yes'
+) {
+    $RT::Logger->error("Checked value for setting requestor to current user. Setting requestor to ".$session{CurrentUser}->Name.'.');
+    $ARGSRef->{Requestors} = $session{CurrentUser}->EmailAddress;
+}
+</%INIT>
+<%ARGS>
+$ARGSRef
+</%ARGS>

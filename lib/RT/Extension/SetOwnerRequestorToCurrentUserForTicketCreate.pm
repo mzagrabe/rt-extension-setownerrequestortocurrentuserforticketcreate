@@ -4,6 +4,12 @@ use 5.006;
 use strict;
 use warnings FATAL => 'all';
 
+RT->AddStyleSheets(
+    qw(
+        rt-extension-setownerrequestortocurrentuserforticketcreate.css
+    )
+);
+
 =head1 NAME
 
 RT::Extension::SetOwnerRequestorToCurrentUserForTicketCreate - The great new RT::Extension::SetOwnerRequestorToCurrentUserForTicketCreate!
