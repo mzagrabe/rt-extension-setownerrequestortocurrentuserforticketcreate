@@ -13,7 +13,7 @@ if (
     &&
     $ARGSRef->{'RT-Extension-SetOwnerRequestorToCurrentUserForTicketCreate__set_requestor_to_current_user'} eq 'yes'
 ) {
-    $RT::Logger->error("Checked value for setting requestor to current user. Setting requestor to ".$session{CurrentUser}->Name.'.');
+    $RT::Logger->debug("Checked value for setting requestor to current user. Setting requestor to ".$session{CurrentUser}->Name.'.');
     $ARGSRef->{Requestors} = $session{CurrentUser}->EmailAddress;
 }
 </%INIT>
