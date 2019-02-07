@@ -9,7 +9,11 @@ my $user = $session{CurrentUser}->Name;
 <table class="set_owner_requestor_to_current_user_for_ticket_create_container">
     <tr>
         <td>
-            Set Owner to <% $user %>:
+            <span
+                class="set_owner_requestor_to_current_user_for_ticket_create"
+            >
+                Set <span class="role">Owner</span> to <span class="username"><% $user %></span>:
+            </span>
             <input
                 class="set_owner_requestor_to_current_user_for_ticket_create"
                 type="checkbox"
@@ -20,7 +24,11 @@ my $user = $session{CurrentUser}->Name;
     </tr>
     <tr>
         <td>
-            Set Requestor to <% $user %>:
+            <span
+                class="set_owner_requestor_to_current_user_for_ticket_create"
+            >
+                Set <span class="role">Requestor</span> to <span class="username"><% $user %></span>:
+            </span>
             <input
                 class="set_owner_requestor_to_current_user_for_ticket_create"
                 type="checkbox"
