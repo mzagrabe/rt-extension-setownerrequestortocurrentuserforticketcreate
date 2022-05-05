@@ -1,22 +1,23 @@
 {
    "abstract" : "The great new RT::Extension::SetOwnerRequestorToCurrentUserForTicketCreate!",
    "author" : [
-      "Matt Zagrabelny, C<< <mzagrabe at d.umn.edu> >>, Matt Zagrabelny <mzagrabe@d.umn.edu>"
+      "Matt Zagrabelny, C<< <mzagrabe at d.umn.edu> >>",
+      "Matt Zagrabelny <mzagrabe@d.umn.edu>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "ExtUtils::MakeMaker version 6.66, CPAN::Meta::Converter version 2.120921",
+   "generated_by" : "Module::Install version 1.08, CPAN::Meta::Converter version 2.150010",
    "license" : [
       "open_source"
    ],
    "meta-spec" : {
       "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
-      "version" : "2"
+      "version" : 2
    },
    "name" : "RT-Extension-SetOwnerRequestorToCurrentUserForTicketCreate",
    "no_index" : {
       "directory" : [
-         "t",
-         "inc"
+         "inc",
+         "t"
       ]
    },
    "prereqs" : {
@@ -39,5 +40,14 @@
       }
    },
    "release_status" : "stable",
-   "version" : "0.01"
+   "resources" : {
+      "bugtracker" : {
+         "web" : "http://rt.cpan.org/NoAuth/Bugs.html?Dist=RT-Extension-SetOwnerRequestorToCurrentUserForTicketCreate"
+      },
+      "license" : [
+         "http://www.gnu.org/licenses/gpl-2.0.html"
+      ]
+   },
+   "version" : "0.01",
+   "x_serialization_backend" : "JSON::PP version 4.08"
 }

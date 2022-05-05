@@ -1,63 +1,80 @@
-RT-Extension-SetOwnerRequestorToCurrentUserForTicketCreate
+NAME
+    RT::Extension::SetOwnerRequestorToCurrentUserForTicketCreate - The great
+    new RT::Extension::SetOwnerRequestorToCurrentUserForTicketCreate!
 
-The README is used to introduce the module and provide instructions on
-how to install the module, any machine dependencies it may have (for
-example C compilers and installed libraries) and any other information
-that should be provided before the module is installed.
+VERSION
+    Version 0.01
 
-A README file is required for CPAN modules since CPAN extracts the README
-file from a module distribution so that people browsing the archive
-can use it to get an idea of the module's uses. It is usually a good idea
-to provide version information here so that people can decide whether
-fixes for the module are worth downloading.
+SYNOPSIS
+    Quick summary of what the module does.
 
+    Perhaps a little code snippet.
 
-INSTALLATION
+        use RT::Extension::SetOwnerRequestorToCurrentUserForTicketCreate;
 
-To install this module, run the following commands:
+        my $foo = RT::Extension::SetOwnerRequestorToCurrentUserForTicketCreate->new();
+        ...
 
-	perl Makefile.PL
-	make
-	make test
-	make install
+EXPORT
+    A list of functions that can be exported. You can delete this section if
+    you don't export anything, such as for a purely object-oriented module.
 
-SUPPORT AND DOCUMENTATION
+SUBROUTINES/METHODS
+  function1
+  function2
+AUTHOR
+    Matt Zagrabelny, <mzagrabe at d.umn.edu>
 
-After installing, you can find documentation for this module with the
-perldoc command.
+BUGS
+    Please report any bugs or feature requests to
+    bug-rt-extension-setownerrequestortocurrentuserforticketcreate at
+    rt.cpan.org, or through the web interface at
+    <http://rt.cpan.org/NoAuth/ReportBug.html?Queue=RT-Extension-SetOwnerReq
+    uestorToCurrentUserForTicketCreate>. I will be notified, and then you'll
+    automatically be notified of progress on your bug as I make changes.
 
-    perldoc RT::Extension::SetOwnerRequestorToCurrentUserForTicketCreate
+SUPPORT
+    You can find documentation for this module with the perldoc command.
 
-You can also look for information at:
+        perldoc RT::Extension::SetOwnerRequestorToCurrentUserForTicketCreate
 
-    RT, CPAN's request tracker (report bugs here)
-        http://rt.cpan.org/NoAuth/Bugs.html?Dist=RT-Extension-SetOwnerRequestorToCurrentUserForTicketCreate
+    You can also look for information at:
 
-    AnnoCPAN, Annotated CPAN documentation
-        http://annocpan.org/dist/RT-Extension-SetOwnerRequestorToCurrentUserForTicketCreate
+    *   RT: CPAN's request tracker (report bugs here)
 
-    CPAN Ratings
-        http://cpanratings.perl.org/d/RT-Extension-SetOwnerRequestorToCurrentUserForTicketCreate
+        <http://rt.cpan.org/NoAuth/Bugs.html?Dist=RT-Extension-SetOwnerReque
+        storToCurrentUserForTicketCreate>
 
-    Search CPAN
-        http://search.cpan.org/dist/RT-Extension-SetOwnerRequestorToCurrentUserForTicketCreate/
+    *   AnnoCPAN: Annotated CPAN documentation
 
+        <http://annocpan.org/dist/RT-Extension-SetOwnerRequestorToCurrentUse
+        rForTicketCreate>
 
+    *   CPAN Ratings
+
+        <http://cpanratings.perl.org/d/RT-Extension-SetOwnerRequestorToCurre
+        ntUserForTicketCreate>
+
+    *   Search CPAN
+
+        <http://search.cpan.org/dist/RT-Extension-SetOwnerRequestorToCurrent
+        UserForTicketCreate/>
+
+ACKNOWLEDGEMENTS
 LICENSE AND COPYRIGHT
+    Copyright 2014 Matt Zagrabelny.
 
-Copyright (C) 2014 Matt Zagrabelny
+    This program is free software; you can redistribute it and/or modify it
+    under the terms of the GNU General Public License as published by the
+    Free Software Foundation; version 2 dated June, 1991 or at your option
+    any later version.
 
-This program is free software; you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation; version 2 dated June, 1991 or at your option
-any later version.
+    This program is distributed in the hope that it will be useful, but
+    WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General
+    Public License for more details.
 
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-A copy of the GNU General Public License is available in the source tree;
-if not, write to the Free Software Foundation, Inc.,
-51 Franklin Street, Fifth Floor, Boston, MA 02110-1301  USA
+    A copy of the GNU General Public License is available in the source
+    tree; if not, write to the Free Software Foundation, Inc., 51 Franklin
+    Street, Fifth Floor, Boston, MA 02110-1301 USA
 

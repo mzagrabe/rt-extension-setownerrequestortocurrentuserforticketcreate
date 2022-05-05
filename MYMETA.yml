@@ -1,7 +1,8 @@
 ---
 abstract: 'The great new RT::Extension::SetOwnerRequestorToCurrentUserForTicketCreate!'
 author:
-  - 'Matt Zagrabelny, C<< <mzagrabe at d.umn.edu> >>, Matt Zagrabelny <mzagrabe@d.umn.edu>'
+  - 'Matt Zagrabelny, C<< <mzagrabe at d.umn.edu> >>'
+  - 'Matt Zagrabelny <mzagrabe@d.umn.edu>'
 build_requires:
   ExtUtils::MakeMaker: '6.59'
   Module::Install: '0'
@@ -9,7 +10,7 @@ build_requires:
 configure_requires:
   ExtUtils::MakeMaker: '0'
 dynamic_config: 0
-generated_by: 'ExtUtils::MakeMaker version 6.66, CPAN::Meta::Converter version 2.120921'
+generated_by: 'Module::Install version 1.08, CPAN::Meta::Converter version 2.150010'
 license: open_source
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -17,8 +18,12 @@ meta-spec:
 name: RT-Extension-SetOwnerRequestorToCurrentUserForTicketCreate
 no_index:
   directory:
-    - t
     - inc
+    - t
 requires:
   perl: '5.006'
+resources:
+  bugtracker: http://rt.cpan.org/NoAuth/Bugs.html?Dist=RT-Extension-SetOwnerRequestorToCurrentUserForTicketCreate
+  license: http://www.gnu.org/licenses/gpl-2.0.html
 version: '0.01'
+x_serialization_backend: 'CPAN::Meta::YAML version 0.018'
