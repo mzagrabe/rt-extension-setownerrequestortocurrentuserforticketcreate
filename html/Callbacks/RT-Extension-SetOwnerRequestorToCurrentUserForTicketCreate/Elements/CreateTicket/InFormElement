@@ -1,1 +1,41 @@
-<& /Elements/AddSetOwnerSetRequestorCheckboxes &>
+<%init>
+my $user = $session{CurrentUser}->Name;
+</%init>
+%# Remember... We are are "in" the form element. We need to close that element first:
+>
+
+%# Now we can get on with this callback. But remember! The last element needs to have no
+%# closing element bracket. It is already present in the calling component.
+<div class="set_owner_requestor_to_current_user_for_ticket_create_container">
+    <div class="set_owner_requestor_to_current_user_for_ticket_create_row">
+        <div class="set_owner_requestor_to_current_user_for_ticket_create_cell">
+            <span
+                class="set_owner_requestor_to_current_user_for_ticket_create"
+            >
+                Set <span class="role">Owner</span> to <span class="username"><% $user %></span>:
+            </span>
+            <input
+                class="set_owner_requestor_to_current_user_for_ticket_create"
+                type="checkbox"
+                name="RT-Extension-SetOwnerRequestorToCurrentUserForTicketCreate__set_owner_to_current_user"
+                value="yes"
+            />
+        </div>
+    </div>
+    <div class="set_owner_requestor_to_current_user_for_ticket_create_row">
+        <div class="set_owner_requestor_to_current_user_for_ticket_create_cell">
+            <span
+                class="set_owner_requestor_to_current_user_for_ticket_create"
+            >
+                Set <span class="role">Requestor</span> to <span class="username"><% $user %></span>:
+            </span>
+            <input
+                class="set_owner_requestor_to_current_user_for_ticket_create"
+                type="checkbox"
+                name="RT-Extension-SetOwnerRequestorToCurrentUserForTicketCreate__set_requestor_to_current_user"
+                value="yes"
+            />
+        </div>
+    </div>
+%# See above comment about the missing trailing bracket '>'
+</div

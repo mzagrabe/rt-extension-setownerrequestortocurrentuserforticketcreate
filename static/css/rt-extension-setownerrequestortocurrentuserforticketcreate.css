@@ -1,17 +1,26 @@
-table.set_owner_requestor_to_current_user_for_ticket_create_container {
-    float: left
+/*
+ * We need to force the button to be inline vs block.
+ */
+form#CreateTicketInQueue > div.create-wide {
+    display: inline;
 }
 
-table.set_owner_requestor_to_current_user_for_ticket_create_container {
+div.set_owner_requestor_to_current_user_for_ticket_create_container {
+    float: left;
     border-collapse: collapse;
-    margin-top: -2px;
+    margin-top: -6px;
+    display: inline-table;
 }
 
-table.set_owner_requestor_to_current_user_for_ticket_create_container > * > tr > td {
+div.set_owner_requestor_to_current_user_for_ticket_create_row {
+    display: table-row;
+}
+
+div.set_owner_requestor_to_current_user_for_ticket_create_cell {
+    display: table-cell;
     border: 0;
     padding: 0;
     margin: 0;
-    color: white;
 }
 
 span.set_owner_requestor_to_current_user_for_ticket_create {
@@ -25,7 +34,7 @@ span.set_owner_requestor_to_current_user_for_ticket_create > span.role {
     font-weight: bold;
 }
 
-#topactions table.set_owner_requestor_to_current_user_for_ticket_create_container > * > tr > td > input.set_owner_requestor_to_current_user_for_ticket_create {
+#topactions div.set_owner_requestor_to_current_user_for_ticket_create_container > div > div > input.set_owner_requestor_to_current_user_for_ticket_create {
     padding: 0;
     margin: 0;
     margin-left: 0.2em;
