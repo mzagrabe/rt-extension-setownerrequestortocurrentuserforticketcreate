@@ -12,12 +12,12 @@ my $user = $session{CurrentUser}->Name;
             <span
                 class="set_owner_requestor_to_current_user_for_ticket_create"
             >
-                Set <span class="role">Owner</span> to <span class="username"><% $user %></span>:
+                Set <span class="role">Requestor</span> to <span class="username"><% $user %></span>:
             </span>
             <input
                 class="set_owner_requestor_to_current_user_for_ticket_create"
                 type="checkbox"
-                name="RT-Extension-SetOwnerRequestorToCurrentUserForTicketCreate__set_owner_to_current_user"
+                name="RT-Extension-SetOwnerRequestorToCurrentUserForTicketCreate__set_requestor_to_current_user"
                 value="yes"
             />
         </div>
@@ -27,12 +27,12 @@ my $user = $session{CurrentUser}->Name;
             <span
                 class="set_owner_requestor_to_current_user_for_ticket_create"
             >
-                Set <span class="role">Requestor</span> to <span class="username"><% $user %></span>:
+                Set <span class="role">Owner</span> to <span class="username"><% $user %></span>:
             </span>
             <input
                 class="set_owner_requestor_to_current_user_for_ticket_create"
                 type="checkbox"
-                name="RT-Extension-SetOwnerRequestorToCurrentUserForTicketCreate__set_requestor_to_current_user"
+                name="RT-Extension-SetOwnerRequestorToCurrentUserForTicketCreate__set_owner_to_current_user"
                 value="yes"
             />
         </div>
