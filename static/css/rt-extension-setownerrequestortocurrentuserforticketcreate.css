@@ -16,14 +16,14 @@ div.set_owner_requestor_to_current_user_for_ticket_create_cell {
     margin: 0;
 }
 
-span.set_owner_requestor_to_current_user_for_ticket_create {
+label.set_owner_requestor_to_current_user_for_ticket_create {
     display: inline-block;
     margin-top: -5px;
     margin-bottom: -5px;
 }
 
-span.set_owner_requestor_to_current_user_for_ticket_create > span.username,
-span.set_owner_requestor_to_current_user_for_ticket_create > span.role {
+label.set_owner_requestor_to_current_user_for_ticket_create > span.username,
+label.set_owner_requestor_to_current_user_for_ticket_create > span.role {
     font-weight: bold;
 }
 

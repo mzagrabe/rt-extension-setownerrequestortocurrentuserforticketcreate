@@ -9,30 +9,34 @@ my $user = $session{CurrentUser}->Name;
 <div class="create-wide set_owner_requestor_to_current_user_for_ticket_create_container">
     <div class="set_owner_requestor_to_current_user_for_ticket_create_row">
         <div class="set_owner_requestor_to_current_user_for_ticket_create_cell">
-            <span
+            <label
                 class="set_owner_requestor_to_current_user_for_ticket_create"
+                for="RT-Extension-SetOwnerRequestorToCurrentUserForTicketCreate__set_requestor_to_current_user"
             >
                 Set <span class="role">Requestor</span> to <span class="username"><% $user %></span>:
-            </span>
+            </label>
             <input
                 class="set_owner_requestor_to_current_user_for_ticket_create"
                 type="checkbox"
                 name="RT-Extension-SetOwnerRequestorToCurrentUserForTicketCreate__set_requestor_to_current_user"
+                id="RT-Extension-SetOwnerRequestorToCurrentUserForTicketCreate__set_requestor_to_current_user"
                 value="yes"
             />
         </div>
     </div>
     <div class="set_owner_requestor_to_current_user_for_ticket_create_row">
         <div class="set_owner_requestor_to_current_user_for_ticket_create_cell">
-            <span
+            <label
                 class="set_owner_requestor_to_current_user_for_ticket_create"
+                for="RT-Extension-SetOwnerRequestorToCurrentUserForTicketCreate__set_owner_to_current_user"
             >
                 Set <span class="role">Owner</span> to <span class="username"><% $user %></span>:
-            </span>
+            </label>
             <input
                 class="set_owner_requestor_to_current_user_for_ticket_create"
                 type="checkbox"
                 name="RT-Extension-SetOwnerRequestorToCurrentUserForTicketCreate__set_owner_to_current_user"
+                id="RT-Extension-SetOwnerRequestorToCurrentUserForTicketCreate__set_owner_to_current_user"
                 value="yes"
             />
         </div>
