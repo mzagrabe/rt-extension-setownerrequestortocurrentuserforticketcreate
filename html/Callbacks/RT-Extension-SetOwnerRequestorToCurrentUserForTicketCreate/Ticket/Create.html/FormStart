@@ -1,5 +1,10 @@
 <%init>
-$ARGSRef->{Requestors} = '';
+# If the "Create new ticket" button was clicked, then clear the Requestors...
+if (exists $ARGSRef->{'CreateNewTicket'}) {
+    $ARGSRef->{Requestors} = '';
+}
+
+# ...and possibly repopulate with the CurrentUser...
 if (
     defined $ARGSRef->{'RT-Extension-SetOwnerRequestorToCurrentUserForTicketCreate__set_owner_to_current_user'}
     &&
